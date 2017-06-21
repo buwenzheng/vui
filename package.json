@@ -19,7 +19,5 @@
     "url": "https://github.com/vespex/vui/issues"
   },
   "homepage": "https://github.com/vespex/vui#readme",
-  "dependencies": {
-    "vue": "^2.3.4"
-  }
+  "dependencies": {}
 }
