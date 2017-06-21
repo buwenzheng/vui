@@ -4,11 +4,14 @@ import alert from './alert'
 import loader from './loader'
 import toast from './toast'
 
-Vue.use(ypp)
-Vue.use(alert)
-Vue.use(loader)
-Vue.use(toast)
-
+export default {
+  install: function (Vue, options) {
+    Vue.use(ypp)
+    Vue.use(alert)
+    Vue.use(loader)
+    Vue.use(toast)
+  }
+}
 /*
 * example:
 * this.$alert({title: '', icon: 2, text: [''], explain: [''], btn: '', hasClose: false}, function () {})
