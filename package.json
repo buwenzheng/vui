@@ -1,0 +1,25 @@
+{
+  "name": "vui",
+  "version": "1.0.0",
+  "description": "ypp ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vespex/vui.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "Vesper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vespex/vui/issues"
+  },
+  "homepage": "https://github.com/vespex/vui#readme",
+  "dependencies": {
+    "vue": "^2.3.4"
+  }
+}
