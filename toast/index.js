@@ -1,22 +1,22 @@
 import toast from './index.vue'
 export default {
   install: function (Vue, options) {
-    let timer = null
-    const Toast = Vue.extend(toast)
-    let instance = new Toast({
+    var timer = null
+    var Toast = Vue.extend(toast)
+    var instance = new Toast({
       el: document.createElement('div')
     })
     document.body.appendChild(instance.$el)
     Vue.prototype.$toast = {
-      open (text) {
+      open: function (text) {
         instance.text = text || ''
         instance.open()
         clearTimeout(timer)
-        timer = setTimeout(() => {
+        timer = setTimeout(function () {
           instance.close()
         }, 2000)
       },
-      close () {
+      close: function () {
         instance.close()
       }
     }

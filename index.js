@@ -1,12 +1,10 @@
 import Vue from 'vue'
-import ypp from './ypp.js'
 import alert from './alert'
 import loader from './loader'
 import toast from './toast'
 
 export default {
   install: function (Vue, options) {
-    Vue.use(ypp)
     Vue.use(alert)
     Vue.use(loader)
     Vue.use(toast)

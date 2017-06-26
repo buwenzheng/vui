@@ -1,17 +1,17 @@
 import loader from './index.vue'
 export default {
   install: function (Vue, options) {
-    const Loader = Vue.extend(loader)
-    let instance = new Loader({
+    var Loader = Vue.extend(loader)
+    var instance = new Loader({
       el: document.createElement('div')
     })
     document.body.appendChild(instance.$el)
     Vue.prototype.$loader = {
-      open (text) {
+      open: function (text) {
         instance.text = text || ''
         instance.open()
       },
-      close () {
+      close: function () {
         instance.close()
       }
     }
