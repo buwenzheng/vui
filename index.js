@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import alert from './alert'
 import loader from './loader'
 import toast from './toast'
