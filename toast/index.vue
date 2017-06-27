@@ -41,5 +41,7 @@ export default {
   display: inline-block;
   padding: 0 .1rem;
   border-radius: .05rem;
+  height: .4rem;
+  line-height: .4rem;
 }
 </style>
