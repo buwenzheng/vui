@@ -10,7 +10,10 @@ export default {
       instance = new Alert({
         el: document.createElement('div')
       })
-      opts = Object.assign({}, opts, options)
+      try {
+        opts = Object.assign({}, opts, options)
+      } catch (e) {
+      }
       for (var key in opts) {
         instance[key] = opts[key]
       }
