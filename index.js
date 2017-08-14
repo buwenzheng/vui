@@ -1,12 +1,14 @@
 import alert from './alert'
 import loader from './loader'
 import toast from './toast'
+import confirm from './confirm'
 
 export default {
   install: function (Vue, options) {
     Vue.use(alert)
     Vue.use(loader)
     Vue.use(toast)
+    Vue.use(confirm)
   }
 }
 /*
