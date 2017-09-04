@@ -1,0 +1,147 @@
+$main : #1D9AFF;
+$black : #2F2F2F;
+$grep : #9B9B9B;
+$f1 : .36rem;
+$f2 : .32rem;
+$f3 : .28rem;
+$f4 : .24rem;
+
+.base-font {
+  font-size: $f2;
+  color: $black;
+}
+
+.base-font-label {
+  font-size: $f2;
+  color: $grep;
+}
+
+body {
+  font-size: .24rem;
+}
+.download-bar {
+  height: 1.2rem;
+  img {
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
+    width: 100%;
+  }
+}
+.toe {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.trans {
+  transition: .5s all;
+}
+.posf {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+.posa {
+  position: absolute;
+  z-index: 5;
+}
+.bottom {
+  bottom:0
+}
+.pos-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pos-full {
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+}
+.btn-input {
+  display: inline-block;
+  height: .8rem;
+  line-height: .8rem;
+  padding: 0 .25rem;
+  border-radius: .1rem;
+  font-size: .32rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.input {
+  @extend .btn-input;
+  border: .5px solid #e1e1e1;
+  &.db {
+    width: 100%;
+  }
+  &.md {
+    height: .88rem;
+    line-height: .88rem;
+  }
+}
+.btn {
+  @extend .btn-input;
+  background: #1D9AFF;
+  border: .5px solid #1D9AFF;
+  color:#fff;
+  text-align: center;
+  font-weight: 300;
+  &.mini {
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+  }
+  &.md {
+    height: .88rem;
+    line-height: .88rem;
+  }
+  &.radius {
+    border-radius: 99rem;
+  }
+  &.db {
+    display: block;
+  }
+  &.def {
+    background: #fff;
+    color: #1D9AFF;
+  }
+  &.dis {
+    background: #c8c8c8;
+    color:#fff;
+    border-color: #c8c8c8;
+  }
+  &.w2 {
+    width: 2.8rem;
+  }
+  &.w3 {
+    width: 2.3rem;
+  }
+}
+.textarea-blk {
+  position: relative;
+  line-height: 1.25;
+  .textarea {
+    resize:none;
+    padding: .1rem .15rem .3rem .15rem;
+    border: 0;
+  }
+  .textarea-count {
+    position: absolute;
+    right: 0;
+    bottom: .1rem;
+  }
+}
+
+.mint-indicator-wrapper {
+  z-index: 101;
+}
+.mint-indicator-mask {
+  opacity: .6;
+  background: #000;
+  z-index: 100;
+}
+.mint-tab-item-label {
+  font-size:.32rem;
+}
