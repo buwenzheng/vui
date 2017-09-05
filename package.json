@@ -5,11 +5,7 @@
   "author": "sfeng",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "test": "node build/build.js -t",
-    "production": "node build/build.js -p",
-    "local": "node build/build.js local",
-    "lint": "eslint --ext .js,.vue src"
+    "dev": "node build/dev-server.js"
   },
   "dependencies": {
     "axios": "^0.16.1",

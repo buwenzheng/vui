@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import FastClick from 'fastclick'
 import Axios from 'axios'
-import Vui from '../index.js'
+import Vui from '../dist/lib/index.js'
 // import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
 
