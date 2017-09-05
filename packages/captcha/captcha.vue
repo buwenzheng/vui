@@ -1,18 +1,32 @@
-<!-- 
-  验证码组件
-  @param phone
-  @param state // 默认：0，已发送：1 
-  @emit error // 手机号有误
-  @emit send // 开始发送验证码
- -->
 <template>
   <span class="yc-captcha" :disable="status.disable" @click="send()">{{codeText}}</span>
 </template>
 
 <script>
+/**
+ * yc-captcha 验证码组件
+ * @param {string} [phone] - 手机号
+ * @param {number} [state=0] - 默认：0，已发送：1 
+ * @param {string} [storage=YCCAPTCHA] - 存储到localstrage的名字
+ * @emit {event} [error] - 手机号有误
+ * @emit {event} [send] - 开始发送验证码
+ *
+ * @example 
+ * <yc-captcha phone="15823232323" :state="0" storage="AOSDFJOASDN" @error="handlerError"  @send="handlerSend"></yc-captcha>
+ */
 export default {
   name: 'yc-captcha',
-  props: ['phone', 'state', 'storageName'],
+  props: {
+    phone: String,
+    state: {
+      type: Number,
+      default: 0
+    },
+    storage: {
+      type: String,
+      default: 'YCCAPTCHA'
+    }
+  },
   data () {
     return {
       status: {

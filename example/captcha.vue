@@ -1,6 +1,6 @@
 <template>
   <div class="page-index">
-    <yc-captcha :phone="form.phone" :state="status.captchaState" @error="handlerError"  @send="handlerSend"></yc-captcha>
+    <yc-captcha :phone="form.phone" :state="status.captchaState" storage="AOSDFJOASDN" @error="handlerError"  @send="handlerSend"></yc-captcha>
   </div>
 </template>
 
