@@ -1,23 +1,22 @@
 {
   "name": "vui",
   "version": "1.0.0",
-  "description": "ypp ui",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A Vue.js project",
+  "author": "sfeng",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {},
+  "dependencies": {
+    "vue": "^2.2.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vespex/vui.git"
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
   },
-  "keywords": [
-    "ui"
-  ],
-  "author": "Vesper",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vespex/vui/issues"
-  },
-  "homepage": "https://github.com/vespex/vui#readme",
-  "dependencies": {}
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
