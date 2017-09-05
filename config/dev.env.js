@@ -1,7 +1,7 @@
-var merge = require('webpack-merge')
-var prodEnv = require('./prod.env')
+// var merge = require('webpack-merge')
+// var prodEnv = require('./prod.env')
 
-module.exports = merge(prodEnv, {
+module.exports = {
   NODE_ENV: '"development"',
   WEBPACK_CHUNKS: { // HtmlWebpackPlugin 自定义的变量
     home: '',
@@ -11,4 +11,4 @@ module.exports = merge(prodEnv, {
     download: '',
     act_id: ''
   }
-})
+}

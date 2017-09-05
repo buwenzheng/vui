@@ -12,7 +12,7 @@ var publicPath = buildEnv[process.env.NODE_ENV]
 
 module.exports = {
   build: {
-    env: require('./prod.env'),
+    // env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/' + name + '/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist/' + name),
     assetsSubDirectory: 'static',
