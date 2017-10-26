@@ -66,6 +66,7 @@ export default {
   padding: .4rem 0;
   transform: translate(-50%, -50%);
   color:#2f2f2f;
+  z-index: 500;
 }
 .confirm .close-icon {
   position: absolute;

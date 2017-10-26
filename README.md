@@ -1,6 +1,6 @@
 ### 安装／引入
 ```javascript
-  npm i -S git+https://github.com/sfengx/vui.git
+  npm i -S git+https://github.com/buwenzheng/vui.git
   import vui from 'vui'
   Vue.use(vui)
 ```

@@ -52,6 +52,7 @@ export default {
   position: fixed;
   top:50%;
   left:50%;
+  z-index: 500;
   background: #fff;
   z-index: 100;
   text-align: center;

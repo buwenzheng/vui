@@ -36,6 +36,7 @@ export default {
   background: rgba(0,0,0,.5);
   top:0;
   left:0;
+  z-index: 500;
 }
 .loader-blk .loader-bd {
   width: 3rem;
